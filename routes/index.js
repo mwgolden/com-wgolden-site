@@ -16,4 +16,8 @@ router.get('/', function(req, response, next) {
   
 });
 
+router.get('/about-me', function(req, response, next){
+  response.send('the about me section')
+})
+
 module.exports = router;

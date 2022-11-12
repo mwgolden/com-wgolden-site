@@ -1,7 +1,24 @@
 {{> navbar }}
 {{> hero }}
+<div class="bg-dark text-center mt-4 rounded">
+    <h1 class="display-5 text-white pt-2">Posts</h1>
+</div>
 <section id="blog">
-    <div class="row mt-5">
+    <div class="row mt-3">
         {{> cards items=posts}}
+    </div>
+    <div class="row">
+        <a href="/posts" class="text-center">View More Posts</a>
+    </div>
+</section>
+<div class="bg-dark text-center mt-4 rounded">
+    <h1 class="display-5 text-white pt-2">Code</h1>
+</div>
+<section id="code">
+    <div class="row mt-3">
+        {{> cards items=posts}}
+    </div>
+    <div class="row">
+        <a href="/projects" class="text-center">View More Projects</a>
     </div>
 </section>
