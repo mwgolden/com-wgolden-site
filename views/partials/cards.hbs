@@ -1,8 +1,9 @@
-{{#each items}}
-    {{> 
-        card title=title 
-        text=description 
-        id=id author=author 
-        image="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    }}
-{{/each}}
+<div class="row mb-2">
+    {{#each items}}
+        {{> 
+            card title=title 
+            text=description 
+            id=id author=author 
+        }}
+    {{/each}}
+</div>
